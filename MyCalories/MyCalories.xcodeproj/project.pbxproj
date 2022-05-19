@@ -13,6 +13,9 @@
 		0F6A080328361273002E66C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F6A080228361273002E66C6 /* Preview Assets.xcassets */; };
 		0F6A080C283612A8002E66C6 /* CaloriesModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A080A283612A8002E66C6 /* CaloriesModel.xcdatamodeld */; };
 		0F6A080E28361325002E66C6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6A080D28361325002E66C6 /* DataController.swift */; };
+		0FF2CC2628369FFD00E1820A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2CC2528369FFD00E1820A /* TabBarView.swift */; };
+		0FF2CC282836A04700E1820A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2CC272836A04700E1820A /* ChartView.swift */; };
+		0FF2CC2A2836A18900E1820A /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF2CC292836A18900E1820A /* Appearance.swift */; };
 		0FFB2BF72836515C00F4A71E /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB2BF62836515C00F4A71E /* TimeFormatting.swift */; };
 		0FFB2BFA2836519800F4A71E /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB2BF92836519800F4A71E /* AddView.swift */; };
 		0FFB2BFC283658E000F4A71E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFB2BFB283658E000F4A71E /* EditView.swift */; };
@@ -26,6 +29,9 @@
 		0F6A080228361273002E66C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F6A080B283612A8002E66C6 /* CaloriesModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaloriesModel.xcdatamodel; sourceTree = "<group>"; };
 		0F6A080D28361325002E66C6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		0FF2CC2528369FFD00E1820A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		0FF2CC272836A04700E1820A /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		0FF2CC292836A18900E1820A /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		0FFB2BF62836515C00F4A71E /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 		0FFB2BF92836519800F4A71E /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		0FFB2BFB283658E000F4A71E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
@@ -61,8 +67,8 @@
 		0F6A07FA28361272002E66C6 /* MyCalories */ = {
 			isa = PBXGroup;
 			children = (
-				0FFB2BF52836514600F4A71E /* Helpers */,
 				0F6A07FB28361272002E66C6 /* MyCaloriesApp.swift */,
+				0FFB2BF52836514600F4A71E /* Helpers */,
 				0F6A080928361282002E66C6 /* DataModel */,
 				0FFB2BF82836517100F4A71E /* Views */,
 				0F6A07FF28361273002E66C6 /* Assets.xcassets */,
@@ -92,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				0FFB2BF62836515C00F4A71E /* TimeFormatting.swift */,
+				0FF2CC2528369FFD00E1820A /* TabBarView.swift */,
+				0FF2CC292836A18900E1820A /* Appearance.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 				0F6A07FD28361272002E66C6 /* ContentView.swift */,
 				0FFB2BFB283658E000F4A71E /* EditView.swift */,
 				0FFB2BF92836519800F4A71E /* AddView.swift */,
+				0FF2CC272836A04700E1820A /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,8 +187,11 @@
 			files = (
 				0FFB2BF72836515C00F4A71E /* TimeFormatting.swift in Sources */,
 				0F6A080C283612A8002E66C6 /* CaloriesModel.xcdatamodeld in Sources */,
+				0FF2CC2628369FFD00E1820A /* TabBarView.swift in Sources */,
 				0FFB2BFA2836519800F4A71E /* AddView.swift in Sources */,
 				0F6A080E28361325002E66C6 /* DataController.swift in Sources */,
+				0FF2CC2A2836A18900E1820A /* Appearance.swift in Sources */,
+				0FF2CC282836A04700E1820A /* ChartView.swift in Sources */,
 				0FFB2BFC283658E000F4A71E /* EditView.swift in Sources */,
 				0F6A07FE28361272002E66C6 /* ContentView.swift in Sources */,
 				0F6A07FC28361272002E66C6 /* MyCaloriesApp.swift in Sources */,
