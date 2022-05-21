@@ -3,6 +3,8 @@ import SwiftUI
 struct TabBarView: View {
   @AppStorage("appearance") var appearance: Appearance = .automatic
   
+//  var food: FetchedResults<CaloriesEntity>.Element
+  
     var body: some View {
       TabView {
         ContentView()
@@ -20,6 +22,15 @@ struct TabBarView: View {
               VStack {
                 Image(systemName: "chart.bar.doc.horizontal")
                 Text("Settings")
+              }
+            })
+            .tag(1)
+        
+        FetchTest()
+            .tabItem({
+              VStack {
+                Image(systemName: "chart.bar.doc.horizontal")
+                Text("TEstting")
               }
             })
             .tag(1)

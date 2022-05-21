@@ -2,7 +2,7 @@ import SwiftUI
 
 struct Bar: Identifiable {
   let id = UUID()
-  var name: String
+  var name2: String
   var day: String
   var value: Double
   var color: Color
@@ -25,7 +25,7 @@ struct Bar: Identifiable {
       }
       
       ///Single bar block
-      let bar = Bar(name: "\(week)", day: days[week-1], value: randomValue, color: color)
+      let bar = Bar(name2: "\(week)", day: days[week-1], value: randomValue, color: color)
       tempBars.append(bar)
       
     }
