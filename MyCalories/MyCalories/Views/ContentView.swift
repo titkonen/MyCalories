@@ -1,7 +1,6 @@
 import SwiftUI
 import CoreData
 
-
 struct ContentView: View {
   @Environment(\.managedObjectContext) var managedObjContext
   @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var food: FetchedResults<CaloriesEntity>

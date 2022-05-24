@@ -30,10 +30,19 @@ struct TabBarView: View {
             .tabItem({
               VStack {
                 Image(systemName: "chart.bar.doc.horizontal")
-                Text("TEstting")
+                Text("FetchTest")
               }
             })
-            .tag(1)
+            .tag(2)
+        
+        ColourChart()
+            .tabItem({
+              VStack {
+                Image(systemName: "chart.bar.doc.horizontal")
+                Text("ColourChart")
+              }
+            })
+            .tag(3)
       }
       .accentColor(Color("primary-orange"))
 
