@@ -14,7 +14,7 @@ struct AddView: View {
         
         VStack {
           Text("Calories \(Int(calories))")
-          Slider(value: $calories, in: 0...1000, step: 10)
+          Slider(value: $calories, in: 0...990, step: 10)
         }
         .padding()
         
