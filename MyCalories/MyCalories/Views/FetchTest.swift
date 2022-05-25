@@ -25,8 +25,13 @@ struct FetchTest: View {
                     name = food.name!
                   }
                 Spacer()
-                Text("Calories: \(Int(food.calories))")
+//                Text("Calories: \(Int(food.calories))")
+//                  .font(.caption)
+//                  .foregroundColor(.gray)
+                Text(calcTimeSince(date:food.date!))
+                  .foregroundColor(.gray)
                   .font(.caption)
+                  .italic()
               }///-HStack
 
               
