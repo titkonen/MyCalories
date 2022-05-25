@@ -20,8 +20,8 @@ struct TabBarView: View {
         ChartView()
             .tabItem({
               VStack {
-                Image(systemName: "chart.bar.doc.horizontal")
-                Text("Settings")
+                Image(systemName: "chart.bar.fill")
+                Text("ChartView")
               }
             })
             .tag(1)
@@ -30,7 +30,7 @@ struct TabBarView: View {
             .tabItem({
               VStack {
                 Image(systemName: "chart.bar.doc.horizontal")
-                Text("TEstting")
+                Text("FetchTest")
               }
             })
             .tag(1)
