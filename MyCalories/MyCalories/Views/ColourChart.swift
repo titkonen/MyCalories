@@ -1,18 +1,15 @@
 import SwiftUI
 
-struct FetchTest: View {
+struct ColourChart: View {
   @Environment(\.managedObjectContext) var managedObjContext
-  
   @State private var name = ""
-  @State private var calories: Double = 0
+  @State var calories: Double = 0
+  @State var color: Color = .gray
   
-  @FetchRequest(sortDescriptors: [
-    SortDescriptor(\.calories)
-  ]) var food: FetchedResults<CaloriesEntity>
+  @FetchRequest(sortDescriptors: [SortDescriptor(\.calories)]) var food: FetchedResults<CaloriesEntity>
   
     var body: some View {
       List {
-
           ForEach(food) { food in
             VStack(alignment: .leading) {
               HStack(alignment: .top) {
@@ -22,38 +19,43 @@ struct FetchTest: View {
                     name = food.name!
                   }
                 Spacer()
-//                Text("Calories: \(Int(food.calories))")
-//                  .font(.caption)
-//                  .foregroundColor(.gray)
                 Text(calcTimeSince(date:food.date!))
                   .foregroundColor(.gray)
                   .font(.caption)
                   .italic()
               }///-HStack
-
-              
               ZStack {
                 Rectangle()
-                  .foregroundColor(.blue)
+                  .foregroundColor(colouredBars(calories:food.calories))
                   .frame(width: food.calories/3, height: 15, alignment: .trailing)
                   .cornerRadius(5)
-
                 Text("\(Int(food.calories))")
                   .foregroundColor(.white)
                   .font(.caption)
               }///-ZStack
-              
             }///-VStack
-            
           }///ForEach Ends
- 
       }///-List
-      
     }///-View
+  
+  func colouredBars(calories: Double) -> Color {
+    if calories >= 600 {
+      print("color red")
+      return .red
+    } else if calories >= 300 {
+      print("color yellow")
+      return .yellow
+    } else {
+      print("color green")
+      return .green
+    }
+     return .clear
+  }
+  
 }///-Struct
 
-struct FetchTest_Previews: PreviewProvider {
+struct ColourChart_Previews: PreviewProvider {
     static var previews: some View {
-        FetchTest()
+      ColourChart()
     }
 }
