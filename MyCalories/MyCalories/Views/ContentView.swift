@@ -23,7 +23,7 @@ struct ContentView: View {
                       .bold()
                     
                     Text("\(Int(food.calories))") + Text(" Calories")
-                      .foregroundColor(.red)
+                      .foregroundColor(.gray)
                   }
                   Spacer()
                   Text(calcTimeSince(date:food.date!))
@@ -35,8 +35,8 @@ struct ContentView: View {
             .onDelete(perform: deleteFood)
           }
           .listStyle(.plain)
-        }///-v
-        .navigationTitle("MyCalories")
+        }///-vStack
+        .navigationTitle("Food List")
         .toolbar {
           ToolbarItem(placement: .navigationBarTrailing) {
             Button {

@@ -17,34 +17,36 @@ struct TabBarView: View {
           .tag(0)
           .preferredColorScheme(appearance.getColorScheme())
         
-        ChartView()
+        ColourChart()
             .tabItem({
               VStack {
-                Image(systemName: "chart.bar.fill")
-                Text("ChartView")
+                Image(systemName: "chart.bar.doc.horizontal")
+                Text("Charts")
               }
             })
             .tag(1)
         
-        FetchTest()
-            .tabItem({
-              VStack {
-                Image(systemName: "chart.bar.doc.horizontal")
-                Text("FetchTest")
-              }
-            })
-            .tag(2)
-        ColourChart()
-            .tabItem({
-              VStack {
-                Image(systemName: "chart.bar")
-                Text("TEST Proto")
-              }
-            })
-            .tag(3)
+//        ChartView()
+//            .tabItem({
+//              VStack {
+//                Image(systemName: "chart.bar.fill")
+//                Text("ChartView")
+//              }
+//            })
+//            .tag(1)
+//
+//        FetchTest()
+//            .tabItem({
+//              VStack {
+//                Image(systemName: "chart.bar.doc.horizontal")
+//                Text("FetchTest")
+//              }
+//            })
+//            .tag(2)
+
         
       }
-      .accentColor(Color("primary-orange"))
+      .accentColor(Color("primary-green"))
 
     }
 }
