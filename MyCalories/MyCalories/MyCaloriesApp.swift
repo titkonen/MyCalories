@@ -8,17 +8,11 @@ struct MyCaloriesApp: App {
   
   @AppStorage("appearance") var appearance: Appearance = .automatic
   
-  
     var body: some Scene {
         WindowGroup {
           TabBarView()
-            ///Injecting
+            ///Injecting environment
             .environment(\.managedObjectContext, dataController.container.viewContext)
-          
-          
-//          TabBarView()
-//              .environment(\.managedObjectContext, PersistenceManager.shared.persistentContainer.viewContext)
-          
         }
     }
 }
